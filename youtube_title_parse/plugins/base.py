@@ -39,8 +39,9 @@ def clean_mvpv(text):
     """
 
 
-    text = re.sub(r"\(\)", "", text)  # ()
-    text = re.sub(r"\(([\s\W])*\)", "", text)  # (optional characters)
+    text = re.sub(r"\(.*?\)", "", text)  # Remove (Anything)
+    
+    text = re.sub(r"\(([\s\W])*\)", "", text)  # Remove ( space )
 
     text = re.sub(
         r"\s*\[\s*(?:off?icial\s+)?([PM]\/?V)\s*]", "", text, flags=re.IGNORECASE
@@ -64,8 +65,9 @@ def clean_fluff(text):
     """
     Remove fluff
     """
-
-    text = clean_mvpv(text)
+    text = re.sub(r"\s{1,}", " ", text)  # Remove stacked spaces
+    text = re.sub(r"\(.*?[Cc]over\s?.*?\)", "", text)  # Remove (cover)
+    text = re.sub(r"\s\#.*", "", text)  # Remove Hashtags
     text = re.sub(r"\s*\[[^\]]+]$", "", text)  # [whatever] at the end
     text = re.sub(r"^\s*\[[^\]]+]\s*", "", text)  # [whatever] at the start
     text = re.sub(
@@ -93,7 +95,7 @@ def clean_fluff(text):
     text = re.sub(
         r"[\s\-–_]+(HD|HQ|[0-9]{3,4}p|4K)\s*$", "", text
     )  # - HD - HQ - 720p - 4K
-
+    text = clean_mvpv(text)
     text = clean_characters(text)
 
     return text
@@ -109,6 +111,7 @@ def clean_title(title):
     title = re.sub(r"\s*video\s*clip", "", title, flags=re.IGNORECASE)  # video clip
     title = re.sub(r"\s+\(?live\)?$", "", title, flags=re.IGNORECASE)  # live
     title = re.sub(r"\(\s*\)", "", title)  # Leftovers after e.g. (official video)
+    title = re.sub(r"\([Aa]udio\)", "", title)  # Remove (Audio)
     title = re.sub(r"\[\s*]", "", title)  # Leftovers after e.g. [1080p]
     title = re.sub(r"【\s*】", "", title)  # Leftovers after e.g. 【MV】
     title = re.sub(

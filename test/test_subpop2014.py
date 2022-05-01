@@ -14,7 +14,7 @@ tests = [
     },
     {
         "input": "Sleater-Kinney - Bury Our Friends (feat. Miranda July)",
-        "expected": ["Sleater-Kinney", "Bury Our Friends (feat. Miranda July)"],
+        "expected": ["Sleater-Kinney", "Bury Our Friends"],
     },
     {
         "input": "Pissed Jeans - Boring Girls [OFFICIAL VIDEO]",
@@ -22,7 +22,7 @@ tests = [
     },
     {
         "input": "Father John Misty - Chateau Lobby #4 (in C for Two Virgins) [OFFICIAL VIDEO]",
-        "expected": ["Father John Misty", "Chateau Lobby #4 (in C for Two Virgins)"],
+        "expected": ["Father John Misty", "Chateau Lobby"],
     },
     {
         "input": "Chad VanGaalen - Monster [OFFICIAL VIDEO]",
@@ -89,7 +89,7 @@ tests = [
         "input": "The Afghan Whigs - Every Little Thing She Does is Magic (cover of The Police)",
         "expected": [
             "The Afghan Whigs",
-            "Every Little Thing She Does is Magic (cover of The Police)",
+            "Every Little Thing She Does is Magic",
         ],
     },
     {
@@ -109,7 +109,14 @@ tests = [
         "input": "Shabazz Palaces - #CAKE (Animal Collective Premature Deflirt Mix)",
         "expected": [
             "Shabazz Palaces",
-            "#CAKE (Animal Collective Premature Deflirt Mix)",
+            "#CAKE",
+        ],
+    },
+    {
+        "input": "Shorts Test - CAKE #Shorts",
+        "expected": [
+            "Shorts Test",
+            "CAKE",
         ],
     },
     {"input": "Flake Music - The Shins", "expected": ["Flake Music", "The Shins"]},
@@ -152,7 +159,7 @@ tests = [
     },
     {
         "input": "J Mascis - Fade Into You (a Mazzy Star cover)",
-        "expected": ["J Mascis", "Fade Into You (a Mazzy Star cover)"],
+        "expected": ["J Mascis", "Fade Into You"],
     },
     {
         "input": "Shabazz Palaces - Forerunner Foray",
@@ -176,7 +183,7 @@ tests = [
     },
     {
         "input": "clipping. - Work Work (feat. Cocc Pistol Cree) [OFFICIAL VIDEO]",
-        "expected": ["clipping.", "Work Work (feat. Cocc Pistol Cree)"],
+        "expected": ["clipping.", "Work Work"],
     },
     {
         "input": "Dum Dum Girls - Rimbaud Eyes [OFFICIAL VIDEO]",
@@ -213,11 +220,11 @@ tests = [
     },
     {
         "input": "THUMPERS - Lungs (Originally Performed by Chvrches) [not the video]",
-        "expected": ["THUMPERS", "Lungs (Originally Performed by Chvrches)"],
+        "expected": ["THUMPERS", "Lungs"],
     },
     {
         "input": "Washed Out - All I Know [Moby Remix] (not the video)",
-        "expected": ["Washed Out", "All I Know [Moby Remix]"],
+        "expected": ["Washed Out", "All I Know"],
     },
     {
         "input": "Goat - Dreambuilding (not the video)",
@@ -235,7 +242,7 @@ tests = [
         "input": 'Shearwater - Black Is The Color  (from the "Colors" episode of Radiolab)',
         "expected": [
             "Shearwater",
-            'Black Is The Color (from the "Colors" episode of Radiolab)',
+            'Black Is The Color',
         ],
         "skip": True,
     },
@@ -253,7 +260,7 @@ tests = [
     },
     {
         "input": "THUMPERS - Unkinder (A Tougher Love) [OFFICIAL VIDEO]",
-        "expected": ["THUMPERS", "Unkinder (A Tougher Love)"],
+        "expected": ["THUMPERS", "Unkinder"],
     },
     {
         "input": "Chad VanGaalen - Where Are You?",
@@ -269,7 +276,7 @@ tests = [
     },
     {
         "input": "Death Vessel - Ilsa Drown (feat. Jónsi) [not the video]",
-        "expected": ["Death Vessel", "Ilsa Drown (feat. Jónsi)"],
+        "expected": ["Death Vessel", "Ilsa Drown"],
     },
     {
         "input": "The Notwist - Close To The Glass (not the video)",
