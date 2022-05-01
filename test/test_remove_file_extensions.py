@@ -24,7 +24,7 @@ tests = [
         "input": "Far East Movement - Live My Life (Feat. Justin Bieber) cover by J.Fla",
         "expected": [
             "Far East Movement",
-            "Live My Life (Feat. Justin Bieber) cover by J.Fla",
+            "Live My Life cover by J.Fla",
         ],
     },
     # https://www.youtube.com/watch?v=rnQBF2CIygg

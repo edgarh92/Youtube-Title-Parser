@@ -9,12 +9,20 @@ tests = [
         "expected": ["Rush", "Moving Pictures"],
     },
     {
+        "input": "Rush – Moving Pictures (Audio)",
+        "expected": ["Rush", "Moving Pictures"],
+    },
+    {
+        "input": "runo plum - black pepper #alternative #indie",
+        "expected": ["runo plum", "black pepper"],
+    },
+    {
         "input": "Rush - Moving Pictures (album)",
         "expected": ["Rush", "Moving Pictures"],
     },
     {
         "input": "[MV] 김뜻돌 (Meaningful Stone) - 비 오는 거리에서 춤을 추자 (Dancing in the rain) / Official Music Video",
-        "expected": ["(Meaningful Stone)", "(Dancing in the rain)"],
+        "expected": ["김뜻돌", "비 오는 거리에서 춤을 추자"],
     },
     {
         "input": "Rush - Moving Pictures (Full Album) (Official)",
@@ -34,7 +42,7 @@ tests = [
     },
     {
         "input": ["[또 오해영 OST Part 5] 정승환 (Jung Seung-Hwan) - 너였다면 (If It Is You)"],
-        "expected": ["Jung Seung-Hwan)", "If It Is You"],
+        "expected": ["정승환", "너였다면"],
     },
 
 ]

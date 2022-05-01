@@ -12,7 +12,7 @@ tests = [
     # and separators are usually tried first.
     {
         "input": 'TWICE(트와이스) "OOH-AHH하게(Like OOH-AHH)" M/V',
-        "expected": ["TWICE", "OOH-AHH(Like OOH-AHH)"],
+        "expected": ["TWICE", "OOH-AHH"],
     },
     {"input": 'GOT7 "Just right(딱 좋아)" M/V', "expected": ["GOT7", "Just right"]},
     {
@@ -23,7 +23,7 @@ tests = [
     {"input": 'GOT7 "A" M/V', "expected": ["GOT7", "A"]},
     {
         "input": 'J.Y. Park(박진영) "Who\'s your mama?(어머님이 누구니) (feat. Jessi)" M/V',
-        "expected": ["J.Y. Park", "Who's your mama? (feat. Jessi)"],
+        "expected": ["J.Y. Park", "Who's your mama?"],
     },
     {
         "input": 'GOT7 "Girls Girls Girls" M/V',
@@ -77,7 +77,7 @@ tests = [
     },
     {
         "input": "Baek A Yeon(백아연) “Shouldn’t Have…(이럴거면 그러지말지) (Feat. Young K)” M/V",
-        "expected": ["Baek A Yeon", "Shouldn’t Have… (Feat. Young K)"],
+        "expected": ["Baek A Yeon", "Shouldn’t Have…"],
     },
     {"input": 'DAY6 "Congratulations" M/V', "expected": ["DAY6", "Congratulations"]},
     {"input": 'Wonder Girls "Tell me" M/V', "expected": ["Wonder Girls", "Tell me"]},

@@ -60,7 +60,7 @@ tests = [
     # https://www.youtube.com/watch?v=qSKPj--tyiM
     {
         "input": "임정희 Lim Jeong Hee - I.O.U Official MV",
-        "expected": ["Lim Jeong Hee", "I.O.U"],
+        "expected": ["임정희 Lim Jeong Hee", "I.O.U"],
     },
     # 4K, see https://github.com/goto-bus-stop/get-artist-title/issues/20
     {
@@ -72,6 +72,7 @@ tests = [
         "input": "Big Limit [@RealBigLimit] - Samurai Jack [Music Video] (720p)",
         "expected": ["Big Limit", "Samurai Jack"],
     },
+
 ]
 
 

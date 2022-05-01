@@ -28,12 +28,6 @@ def clean_common_fluff(title):
         title = re.sub(r"[\u3131-\uD79D]", "", title) 
         title = re.sub(r"^\s", "", title) 
     
-    title = re.sub(
-        r"\(", "", title, flags=re.IGNORECASE
-    )
-    title = re.sub(
-        r"\)", "", title, flags=re.IGNORECASE
-    )
     return title.strip()
 
 
