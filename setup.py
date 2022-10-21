@@ -14,7 +14,7 @@ tests_require = ["six"]
 
 setup(
     name="youtube_title_parse",
-    version="1.0.0",
+    version="1.0.1",
     description="Parse the title of a YouTube video to try and get artist & song name",
     long_description=README,
     long_description_content_type="text/markdown",
