@@ -147,8 +147,8 @@ def clean_artist(artist):
 
 
 def in_quotes(text, idx):
-    open_chars = "([{«}【『\"'"
-    close_chars = ")]}»」】\"'"
+    open_chars = "([{«『【\"\'"
+    close_chars = ")]}»」】\"\'"
     toggle_chars = "\"'"
     open_pars = dict.fromkeys(close_chars, 0)
     for character in text[:idx]:
