@@ -24,9 +24,9 @@ SEPARATORS = [
 ]
 
 def clean_characters(text):
-    #todo: condiational  for "english -  korean words" regex
+    # TODO: Conditional  for "english -  korean words" regex
 
-    #todo: condiational  for "Korean words - english words" regex. Do not remove Korean characters if the patterns match. 
+     # TODO: Conditional  for "Korean words - english words" regex. Do not remove Korean characters if the patterns match. 
 
     if re.search(r"([A-Za-z])+", text) and not re.search(r"([A-Za-z])+", text): #If english characters, remove all korean.
         text = re.sub(r"[\u3131-\uD79D]", "", text) 
@@ -114,6 +114,8 @@ def clean_title(title):
     title = re.sub(r"\([Aa]udio\)", "", title)  # Remove (Audio)
     title = re.sub(r"\[\s*]", "", title)  # Leftovers after e.g. [1080p]
     title = re.sub(r"【\s*】", "", title)  # Leftovers after e.g. 【MV】
+    title = re.sub(r"「\s*」", "", title)  # Leftovers after e.g. 【MV】
+    title = re.sub(r"『\s*」", "", title)  # Leftovers after e.g. 【MV】
     title = re.sub(
         r"^(|.*\s)\"(.*)\"(\s.*|)$", r"\2", title
     )  # Artist - The new "Track title" featuring someone
@@ -147,8 +149,8 @@ def clean_artist(artist):
 
 
 def in_quotes(text, idx):
-    open_chars = "([{«『【\"\'"
-    close_chars = ")]}»」】\"\'"
+    open_chars = "「([{«『【\"\'"
+    close_chars = "」)]}»」】\"\'"
     toggle_chars = "\"'"
     open_pars = dict.fromkeys(close_chars, 0)
     for character in text[:idx]:

@@ -44,6 +44,10 @@ tests = [
         "input": ["[또 오해영 OST Part 5] 정승환 (Jung Seung-Hwan) - 너였다면 (If It Is You)"],
         "expected": ["정승환", "너였다면"],
     },
+    {
+        "input": "SAYAKA「garden」",
+        "expected": ["SAYAKA", "garden"],
+    }
 
 ]
 
