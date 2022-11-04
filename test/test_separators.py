@@ -29,7 +29,7 @@ tests = [
     {
         "input": "[MV] YOUNHA(윤하) _ Get It?(알아듣겠지) (Feat. HA:TFELT, CHEETAH)",
         "expected": ["YOUNHA", "Get It?"],
-    },
+    }
 ]
 
 
