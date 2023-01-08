@@ -1,7 +1,4 @@
-[![PyPI version shields.io](https://img.shields.io/pypi/v/youtube-title-parse.svg)](https://pypi.org/project/youtube-title-parse/)
-[![PyPI license](https://img.shields.io/pypi/l/youtube-title-parse.svg)](https://pypi.org/project/youtube-title-parse/)
-[![PyPI status](https://img.shields.io/pypi/status/youtube-title-parse.svg)](https://pypi.org/project/youtube-title-parse/)
-![youtube_title_parse CI](https://github.com/lttkgp/youtube_title_parse/workflows/youtube_title_parse%20CI/badge.svg)
+
 
 # youtube title parse
 
